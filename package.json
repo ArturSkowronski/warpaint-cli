@@ -1,6 +1,6 @@
 {
   "name": "minipainter",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Local-first CLI + MCP server for a miniature-paint inventory and cross-brand color matching.",
   "mcpName": "io.github.ArturSkowronski/minipainter",
   "license": "MIT",

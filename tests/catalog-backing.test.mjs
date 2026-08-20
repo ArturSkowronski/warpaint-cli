@@ -40,6 +40,6 @@ test('pruned catalog sizes match the backed upstream sets', async () => {
   for (const p of catalog.paints) byProvider[p.provider] = (byProvider[p.provider] || 0) + 1;
   assert.equal(byProvider.army_painter, 419); // 552 - 133 unbacked
   assert.equal(byProvider.citadel, 261); // 288 - 27 unbacked
-  assert.equal(byProvider.vallejo, 166); // fully backed (incl. 12 pinned Game Inks)
+  assert.equal(byProvider.vallejo, 226); // fully backed (incl. 12 pinned Game Inks + 20x4 TMM)
   assert.equal(byProvider.ak_interactive, 613); // fully backed
 });

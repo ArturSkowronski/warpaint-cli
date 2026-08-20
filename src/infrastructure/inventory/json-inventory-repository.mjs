@@ -8,7 +8,9 @@ async function readInventoryFile(inventoryPath) {
   const raw = await fs.readFile(inventoryPath, 'utf8');
   const inventory = JSON.parse(raw);
   validateInventory(inventory);
-  return inventory;
+  // Normalize on read, not just on write: renamed paint ids are remapped in
+  // normalizeInventory, and a read-only command must see the migrated ids too.
+  return normalizeInventory(inventory);
 }
 
 function readInventoryFromEnv() {

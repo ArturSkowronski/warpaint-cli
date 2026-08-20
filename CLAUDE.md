@@ -61,6 +61,22 @@ Ranges upstream doesn't carry get a hand-curated pinned source instead: the Vall
 Ink line lives in `scripts/vallejo-game-inks.source.json` (provenance inside) and is merged by
 `node scripts/import-vallejo-inks.mjs` (idempotent).
 
+Vallejo **True Metallic Metal** ships **four bottles per colour**, one per SKU block — Light
+(77.101–120), Base (77.121–140), Shade (77.141–160), Airbrush (77.161–180) — so upstream's
+`vallejo/vallejo_true_metallic_metal.json` holds 20 colours × 4 = 80 records, each with its own
+hex. Import **all** of them (`node scripts/import-vallejo-tmm.mjs <source-file>`); do **not**
+deduplicate by name, which is what the original transform did and why the range was silently
+reduced to its Light bottles until 2026-08-13. Ids are `vallejo/<slug>-<light|base|shade|airbrush>`;
+`name` carries the variant (`Imperial Gold (Base)`) while `normalized_name` stays bare so
+upstream-name backing and whole-family search both keep working. Shade gets `usage_roles`
+`['metallic','shade']` so the first-match overlay resolves it to `wash` (it is used like one);
+the rest stay `metallic`.
+
+**Renaming a catalog id is a breaking change for inventories.** Add the old→new pair to
+`src/id-migrations.mjs`; `normalizeInventory` applies the map, so both the JSON and Postgres
+repositories inherit it. Migration happens on read and is persisted on the next write, so the
+on-disk file keeps the legacy id until something mutates it — that is deliberate, not a bug.
+
 ## Conventions
 - ESM (`.mjs`), `import test from 'node:test'` + `node:assert/strict`.
 - Pure logic (transforms, predicates) separated from I/O; keep files focused.

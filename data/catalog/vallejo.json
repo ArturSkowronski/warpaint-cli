@@ -2503,406 +2503,6 @@
       "owned": false
     },
     {
-      "id": "vallejo/aged-metal",
-      "provider": "vallejo",
-      "name": "Aged Metal",
-      "normalized_name": "aged metal",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "yellow"
-      ],
-      "rgb": {
-        "r": 182,
-        "g": 165,
-        "b": 111
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/amber-green",
-      "provider": "vallejo",
-      "name": "Amber Green",
-      "normalized_name": "amber green",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "yellow"
-      ],
-      "rgb": {
-        "r": 165,
-        "g": 175,
-        "b": 107
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/amethyst-purple",
-      "provider": "vallejo",
-      "name": "Amethyst Purple",
-      "normalized_name": "amethyst purple",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "purple"
-      ],
-      "rgb": {
-        "r": 197,
-        "g": 149,
-        "b": 196
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/ancient-copper",
-      "provider": "vallejo",
-      "name": "Ancient Copper",
-      "normalized_name": "ancient copper",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "orange"
-      ],
-      "rgb": {
-        "r": 226,
-        "g": 157,
-        "b": 118
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/arcane-gold",
-      "provider": "vallejo",
-      "name": "Arcane Gold",
-      "normalized_name": "arcane gold",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "orange"
-      ],
-      "rgb": {
-        "r": 225,
-        "g": 184,
-        "b": 104
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/beetle-green",
-      "provider": "vallejo",
-      "name": "Beetle Green",
-      "normalized_name": "beetle green",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "green"
-      ],
-      "rgb": {
-        "r": 143,
-        "g": 202,
-        "b": 174
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/celestial-violet",
-      "provider": "vallejo",
-      "name": "Celestial Violet",
-      "normalized_name": "celestial violet",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "purple"
-      ],
-      "rgb": {
-        "r": 184,
-        "g": 164,
-        "b": 207
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/crimson-magenta",
-      "provider": "vallejo",
-      "name": "Crimson Magenta",
-      "normalized_name": "crimson magenta",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "pink"
-      ],
-      "rgb": {
-        "r": 226,
-        "g": 141,
-        "b": 181
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/dusken-green",
-      "provider": "vallejo",
-      "name": "Dusken Green",
-      "normalized_name": "dusken green",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "green"
-      ],
-      "rgb": {
-        "r": 119,
-        "g": 177,
-        "b": 126
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/forged-red",
-      "provider": "vallejo",
-      "name": "Forged Red",
-      "normalized_name": "forged red",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "orange"
-      ],
-      "rgb": {
-        "r": 228,
-        "g": 117,
-        "b": 44
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/greenish-gold",
-      "provider": "vallejo",
-      "name": "Greenish Gold",
-      "normalized_name": "greenish gold",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "yellow"
-      ],
-      "rgb": {
-        "r": 238,
-        "g": 209,
-        "b": 105
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/hydra-turquoise",
-      "provider": "vallejo",
-      "name": "Hydra Turquoise",
-      "normalized_name": "hydra turquoise",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "blue"
-      ],
-      "rgb": {
-        "r": 128,
-        "g": 202,
-        "b": 219
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/imperial-gold",
-      "provider": "vallejo",
-      "name": "Imperial Gold",
-      "normalized_name": "imperial gold",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "orange"
-      ],
-      "rgb": {
-        "r": 209,
-        "g": 169,
-        "b": 101
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/obsidian-black",
-      "provider": "vallejo",
-      "name": "Obsidian Black",
-      "normalized_name": "obsidian black",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "grey"
-      ],
-      "rgb": {
-        "r": 158,
-        "g": 156,
-        "b": 142
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/radiant-yellow",
-      "provider": "vallejo",
-      "name": "Radiant Yellow",
-      "normalized_name": "radiant yellow",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "yellow"
-      ],
-      "rgb": {
-        "r": 232,
-        "g": 210,
-        "b": 38
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/ruby-red",
-      "provider": "vallejo",
-      "name": "Ruby Red",
-      "normalized_name": "ruby red",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "pink"
-      ],
-      "rgb": {
-        "r": 238,
-        "g": 155,
-        "b": 135
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/rusty-metal",
-      "provider": "vallejo",
-      "name": "Rusty Metal",
-      "normalized_name": "rusty metal",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "orange"
-      ],
-      "rgb": {
-        "r": 195,
-        "g": 157,
-        "b": 134
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/sapphire-blue",
-      "provider": "vallejo",
-      "name": "Sapphire Blue",
-      "normalized_name": "sapphire blue",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "blue"
-      ],
-      "rgb": {
-        "r": 80,
-        "g": 174,
-        "b": 226
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/sterling-silver",
-      "provider": "vallejo",
-      "name": "Sterling Silver",
-      "normalized_name": "sterling silver",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "white"
-      ],
-      "rgb": {
-        "r": 245,
-        "g": 245,
-        "b": 244
-      },
-      "owned": false
-    },
-    {
-      "id": "vallejo/ultramarine-blue-77-110",
-      "provider": "vallejo",
-      "name": "Ultramarine Blue",
-      "normalized_name": "ultramarine blue",
-      "aliases": [],
-      "usage_roles": [
-        "metallic"
-      ],
-      "color_families": [
-        "metallic",
-        "blue"
-      ],
-      "rgb": {
-        "r": 126,
-        "g": 176,
-        "b": 203
-      },
-      "owned": false
-    },
-    {
       "id": "vallejo/gloss-varnish",
       "provider": "vallejo",
       "name": "Gloss Varnish",
@@ -3186,6 +2786,1886 @@
         "r": 233,
         "g": 155,
         "b": 18
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/aged-metal-airbrush",
+      "provider": "vallejo",
+      "name": "Aged Metal (Airbrush)",
+      "normalized_name": "aged metal",
+      "aliases": [
+        "Aged Metal Airbrush",
+        "77.179"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "brown"
+      ],
+      "rgb": {
+        "r": 94,
+        "g": 85,
+        "b": 46
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/aged-metal-base",
+      "provider": "vallejo",
+      "name": "Aged Metal (Base)",
+      "normalized_name": "aged metal",
+      "aliases": [
+        "Aged Metal Base",
+        "77.139"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "brown"
+      ],
+      "rgb": {
+        "r": 94,
+        "g": 85,
+        "b": 46
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/aged-metal-light",
+      "provider": "vallejo",
+      "name": "Aged Metal (Light)",
+      "normalized_name": "aged metal",
+      "aliases": [
+        "Aged Metal Light",
+        "77.119"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "yellow"
+      ],
+      "rgb": {
+        "r": 182,
+        "g": 165,
+        "b": 111
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/aged-metal-shade",
+      "provider": "vallejo",
+      "name": "Aged Metal (Shade)",
+      "normalized_name": "aged metal",
+      "aliases": [
+        "Aged Metal Shade",
+        "77.159"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "black"
+      ],
+      "rgb": {
+        "r": 52,
+        "g": 49,
+        "b": 4
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/amber-green-airbrush",
+      "provider": "vallejo",
+      "name": "Amber Green (Airbrush)",
+      "normalized_name": "amber green",
+      "aliases": [
+        "Amber Green Airbrush",
+        "77.175"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "green"
+      ],
+      "rgb": {
+        "r": 95,
+        "g": 122,
+        "b": 55
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/amber-green-base",
+      "provider": "vallejo",
+      "name": "Amber Green (Base)",
+      "normalized_name": "amber green",
+      "aliases": [
+        "Amber Green Base",
+        "77.135"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "green"
+      ],
+      "rgb": {
+        "r": 94,
+        "g": 121,
+        "b": 54
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/amber-green-light",
+      "provider": "vallejo",
+      "name": "Amber Green (Light)",
+      "normalized_name": "amber green",
+      "aliases": [
+        "Amber Green Light",
+        "77.115"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "yellow"
+      ],
+      "rgb": {
+        "r": 165,
+        "g": 175,
+        "b": 107
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/amber-green-shade",
+      "provider": "vallejo",
+      "name": "Amber Green (Shade)",
+      "normalized_name": "amber green",
+      "aliases": [
+        "Amber Green Shade",
+        "77.155"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "green"
+      ],
+      "rgb": {
+        "r": 22,
+        "g": 58,
+        "b": 36
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/amethyst-purple-airbrush",
+      "provider": "vallejo",
+      "name": "Amethyst Purple (Airbrush)",
+      "normalized_name": "amethyst purple",
+      "aliases": [
+        "Amethyst Purple Airbrush",
+        "77.168"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "purple"
+      ],
+      "rgb": {
+        "r": 155,
+        "g": 89,
+        "b": 157
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/amethyst-purple-base",
+      "provider": "vallejo",
+      "name": "Amethyst Purple (Base)",
+      "normalized_name": "amethyst purple",
+      "aliases": [
+        "Amethyst Purple Base",
+        "77.128"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "purple"
+      ],
+      "rgb": {
+        "r": 155,
+        "g": 89,
+        "b": 157
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/amethyst-purple-light",
+      "provider": "vallejo",
+      "name": "Amethyst Purple (Light)",
+      "normalized_name": "amethyst purple",
+      "aliases": [
+        "Amethyst Purple Light",
+        "77.108"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "purple"
+      ],
+      "rgb": {
+        "r": 197,
+        "g": 149,
+        "b": 196
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/amethyst-purple-shade",
+      "provider": "vallejo",
+      "name": "Amethyst Purple (Shade)",
+      "normalized_name": "amethyst purple",
+      "aliases": [
+        "Amethyst Purple Shade",
+        "77.148"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "purple"
+      ],
+      "rgb": {
+        "r": 70,
+        "g": 18,
+        "b": 81
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/ancient-copper-airbrush",
+      "provider": "vallejo",
+      "name": "Ancient Copper (Airbrush)",
+      "normalized_name": "ancient copper",
+      "aliases": [
+        "Ancient Copper Airbrush",
+        "77.164"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "orange"
+      ],
+      "rgb": {
+        "r": 217,
+        "g": 117,
+        "b": 52
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/ancient-copper-base",
+      "provider": "vallejo",
+      "name": "Ancient Copper (Base)",
+      "normalized_name": "ancient copper",
+      "aliases": [
+        "Ancient Copper Base",
+        "77.124"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "orange"
+      ],
+      "rgb": {
+        "r": 217,
+        "g": 117,
+        "b": 52
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/ancient-copper-light",
+      "provider": "vallejo",
+      "name": "Ancient Copper (Light)",
+      "normalized_name": "ancient copper",
+      "aliases": [
+        "Ancient Copper Light",
+        "77.104"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "orange"
+      ],
+      "rgb": {
+        "r": 226,
+        "g": 157,
+        "b": 118
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/ancient-copper-shade",
+      "provider": "vallejo",
+      "name": "Ancient Copper (Shade)",
+      "normalized_name": "ancient copper",
+      "aliases": [
+        "Ancient Copper Shade",
+        "77.144"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "brown"
+      ],
+      "rgb": {
+        "r": 119,
+        "g": 57,
+        "b": 3
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/arcane-gold-airbrush",
+      "provider": "vallejo",
+      "name": "Arcane Gold (Airbrush)",
+      "normalized_name": "arcane gold",
+      "aliases": [
+        "Arcane Gold Airbrush",
+        "77.177"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "brown"
+      ],
+      "rgb": {
+        "r": 158,
+        "g": 108,
+        "b": 42
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/arcane-gold-base",
+      "provider": "vallejo",
+      "name": "Arcane Gold (Base)",
+      "normalized_name": "arcane gold",
+      "aliases": [
+        "Arcane Gold Base",
+        "77.137"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "brown"
+      ],
+      "rgb": {
+        "r": 158,
+        "g": 108,
+        "b": 42
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/arcane-gold-light",
+      "provider": "vallejo",
+      "name": "Arcane Gold (Light)",
+      "normalized_name": "arcane gold",
+      "aliases": [
+        "Arcane Gold Light",
+        "77.117"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "orange"
+      ],
+      "rgb": {
+        "r": 225,
+        "g": 184,
+        "b": 104
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/arcane-gold-shade",
+      "provider": "vallejo",
+      "name": "Arcane Gold (Shade)",
+      "normalized_name": "arcane gold",
+      "aliases": [
+        "Arcane Gold Shade",
+        "77.157"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "brown"
+      ],
+      "rgb": {
+        "r": 78,
+        "g": 52,
+        "b": 25
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/beetle-green-airbrush",
+      "provider": "vallejo",
+      "name": "Beetle Green (Airbrush)",
+      "normalized_name": "beetle green",
+      "aliases": [
+        "Beetle Green Airbrush",
+        "77.173"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "green"
+      ],
+      "rgb": {
+        "r": 0,
+        "g": 142,
+        "b": 116
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/beetle-green-base",
+      "provider": "vallejo",
+      "name": "Beetle Green (Base)",
+      "normalized_name": "beetle green",
+      "aliases": [
+        "Beetle Green Base",
+        "77.133"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "green"
+      ],
+      "rgb": {
+        "r": 0,
+        "g": 142,
+        "b": 116
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/beetle-green-light",
+      "provider": "vallejo",
+      "name": "Beetle Green (Light)",
+      "normalized_name": "beetle green",
+      "aliases": [
+        "Beetle Green Light",
+        "77.113"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "green"
+      ],
+      "rgb": {
+        "r": 143,
+        "g": 202,
+        "b": 174
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/beetle-green-shade",
+      "provider": "vallejo",
+      "name": "Beetle Green (Shade)",
+      "normalized_name": "beetle green",
+      "aliases": [
+        "Beetle Green Shade",
+        "77.153"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "green"
+      ],
+      "rgb": {
+        "r": 0,
+        "g": 94,
+        "b": 64
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/celestial-violet-airbrush",
+      "provider": "vallejo",
+      "name": "Celestial Violet (Airbrush)",
+      "normalized_name": "celestial violet",
+      "aliases": [
+        "Celestial Violet Airbrush",
+        "77.169"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "purple"
+      ],
+      "rgb": {
+        "r": 125,
+        "g": 80,
+        "b": 153
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/celestial-violet-base",
+      "provider": "vallejo",
+      "name": "Celestial Violet (Base)",
+      "normalized_name": "celestial violet",
+      "aliases": [
+        "Celestial Violet Base",
+        "77.129"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "purple"
+      ],
+      "rgb": {
+        "r": 125,
+        "g": 80,
+        "b": 153
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/celestial-violet-light",
+      "provider": "vallejo",
+      "name": "Celestial Violet (Light)",
+      "normalized_name": "celestial violet",
+      "aliases": [
+        "Celestial Violet Light",
+        "77.109"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "purple"
+      ],
+      "rgb": {
+        "r": 184,
+        "g": 164,
+        "b": 207
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/celestial-violet-shade",
+      "provider": "vallejo",
+      "name": "Celestial Violet (Shade)",
+      "normalized_name": "celestial violet",
+      "aliases": [
+        "Celestial Violet Shade",
+        "77.149"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "purple"
+      ],
+      "rgb": {
+        "r": 47,
+        "g": 21,
+        "b": 66
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/crimson-magenta-airbrush",
+      "provider": "vallejo",
+      "name": "Crimson Magenta (Airbrush)",
+      "normalized_name": "crimson magenta",
+      "aliases": [
+        "Crimson Magenta Airbrush",
+        "77.167"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "pink"
+      ],
+      "rgb": {
+        "r": 183,
+        "g": 74,
+        "b": 131
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/crimson-magenta-base",
+      "provider": "vallejo",
+      "name": "Crimson Magenta (Base)",
+      "normalized_name": "crimson magenta",
+      "aliases": [
+        "Crimson Magenta Base",
+        "77.127"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "pink"
+      ],
+      "rgb": {
+        "r": 183,
+        "g": 74,
+        "b": 131
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/crimson-magenta-light",
+      "provider": "vallejo",
+      "name": "Crimson Magenta (Light)",
+      "normalized_name": "crimson magenta",
+      "aliases": [
+        "Crimson Magenta Light",
+        "77.107"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "pink"
+      ],
+      "rgb": {
+        "r": 226,
+        "g": 141,
+        "b": 181
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/crimson-magenta-shade",
+      "provider": "vallejo",
+      "name": "Crimson Magenta (Shade)",
+      "normalized_name": "crimson magenta",
+      "aliases": [
+        "Crimson Magenta Shade",
+        "77.147"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "pink"
+      ],
+      "rgb": {
+        "r": 144,
+        "g": 0,
+        "b": 89
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/dusken-green-airbrush",
+      "provider": "vallejo",
+      "name": "Dusken Green (Airbrush)",
+      "normalized_name": "dusken green",
+      "aliases": [
+        "Dusken Green Airbrush",
+        "77.174"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "green"
+      ],
+      "rgb": {
+        "r": 55,
+        "g": 97,
+        "b": 63
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/dusken-green-base",
+      "provider": "vallejo",
+      "name": "Dusken Green (Base)",
+      "normalized_name": "dusken green",
+      "aliases": [
+        "Dusken Green Base",
+        "77.134"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "green"
+      ],
+      "rgb": {
+        "r": 55,
+        "g": 97,
+        "b": 63
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/dusken-green-light",
+      "provider": "vallejo",
+      "name": "Dusken Green (Light)",
+      "normalized_name": "dusken green",
+      "aliases": [
+        "Dusken Green Light",
+        "77.114"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "green"
+      ],
+      "rgb": {
+        "r": 119,
+        "g": 177,
+        "b": 126
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/dusken-green-shade",
+      "provider": "vallejo",
+      "name": "Dusken Green (Shade)",
+      "normalized_name": "dusken green",
+      "aliases": [
+        "Dusken Green Shade",
+        "77.154"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "black"
+      ],
+      "rgb": {
+        "r": 0,
+        "g": 53,
+        "b": 24
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/forged-red-airbrush",
+      "provider": "vallejo",
+      "name": "Forged Red (Airbrush)",
+      "normalized_name": "forged red",
+      "aliases": [
+        "Forged Red Airbrush",
+        "77.165"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "red"
+      ],
+      "rgb": {
+        "r": 207,
+        "g": 87,
+        "b": 55
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/forged-red-base",
+      "provider": "vallejo",
+      "name": "Forged Red (Base)",
+      "normalized_name": "forged red",
+      "aliases": [
+        "Forged Red Base",
+        "77.125"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "red"
+      ],
+      "rgb": {
+        "r": 207,
+        "g": 87,
+        "b": 55
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/forged-red-light",
+      "provider": "vallejo",
+      "name": "Forged Red (Light)",
+      "normalized_name": "forged red",
+      "aliases": [
+        "Forged Red Light",
+        "77.105"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "orange"
+      ],
+      "rgb": {
+        "r": 228,
+        "g": 117,
+        "b": 44
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/forged-red-shade",
+      "provider": "vallejo",
+      "name": "Forged Red (Shade)",
+      "normalized_name": "forged red",
+      "aliases": [
+        "Forged Red Shade",
+        "77.145"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "red"
+      ],
+      "rgb": {
+        "r": 110,
+        "g": 18,
+        "b": 11
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/greenish-gold-airbrush",
+      "provider": "vallejo",
+      "name": "Greenish Gold (Airbrush)",
+      "normalized_name": "greenish gold",
+      "aliases": [
+        "Greenish Gold Airbrush",
+        "77.176"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "yellow"
+      ],
+      "rgb": {
+        "r": 135,
+        "g": 121,
+        "b": 52
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/greenish-gold-base",
+      "provider": "vallejo",
+      "name": "Greenish Gold (Base)",
+      "normalized_name": "greenish gold",
+      "aliases": [
+        "Greenish Gold Base",
+        "77.136"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "yellow"
+      ],
+      "rgb": {
+        "r": 135,
+        "g": 121,
+        "b": 52
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/greenish-gold-light",
+      "provider": "vallejo",
+      "name": "Greenish Gold (Light)",
+      "normalized_name": "greenish gold",
+      "aliases": [
+        "Greenish Gold Light",
+        "77.116"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "yellow"
+      ],
+      "rgb": {
+        "r": 238,
+        "g": 209,
+        "b": 105
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/greenish-gold-shade",
+      "provider": "vallejo",
+      "name": "Greenish Gold (Shade)",
+      "normalized_name": "greenish gold",
+      "aliases": [
+        "Greenish Gold Shade",
+        "77.156"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "green"
+      ],
+      "rgb": {
+        "r": 43,
+        "g": 50,
+        "b": 16
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/hydra-turquoise-airbrush",
+      "provider": "vallejo",
+      "name": "Hydra Turquoise (Airbrush)",
+      "normalized_name": "hydra turquoise",
+      "aliases": [
+        "Hydra Turquoise Airbrush",
+        "77.172"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "blue"
+      ],
+      "rgb": {
+        "r": 0,
+        "g": 147,
+        "b": 180
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/hydra-turquoise-base",
+      "provider": "vallejo",
+      "name": "Hydra Turquoise (Base)",
+      "normalized_name": "hydra turquoise",
+      "aliases": [
+        "Hydra Turquoise Base",
+        "77.132"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "blue"
+      ],
+      "rgb": {
+        "r": 0,
+        "g": 147,
+        "b": 172
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/hydra-turquoise-light",
+      "provider": "vallejo",
+      "name": "Hydra Turquoise (Light)",
+      "normalized_name": "hydra turquoise",
+      "aliases": [
+        "Hydra Turquoise Light",
+        "77.112"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "blue"
+      ],
+      "rgb": {
+        "r": 128,
+        "g": 202,
+        "b": 219
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/hydra-turquoise-shade",
+      "provider": "vallejo",
+      "name": "Hydra Turquoise (Shade)",
+      "normalized_name": "hydra turquoise",
+      "aliases": [
+        "Hydra Turquoise Shade",
+        "77.152"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "blue"
+      ],
+      "rgb": {
+        "r": 0,
+        "g": 101,
+        "b": 109
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/imperial-gold-airbrush",
+      "provider": "vallejo",
+      "name": "Imperial Gold (Airbrush)",
+      "normalized_name": "imperial gold",
+      "aliases": [
+        "Imperial Gold Airbrush",
+        "77.163"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "orange"
+      ],
+      "rgb": {
+        "r": 203,
+        "g": 139,
+        "b": 80
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/imperial-gold-base",
+      "provider": "vallejo",
+      "name": "Imperial Gold (Base)",
+      "normalized_name": "imperial gold",
+      "aliases": [
+        "Imperial Gold Base",
+        "77.123"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "orange"
+      ],
+      "rgb": {
+        "r": 203,
+        "g": 139,
+        "b": 80
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/imperial-gold-light",
+      "provider": "vallejo",
+      "name": "Imperial Gold (Light)",
+      "normalized_name": "imperial gold",
+      "aliases": [
+        "Imperial Gold Light",
+        "77.103"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "orange"
+      ],
+      "rgb": {
+        "r": 209,
+        "g": 169,
+        "b": 101
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/imperial-gold-shade",
+      "provider": "vallejo",
+      "name": "Imperial Gold (Shade)",
+      "normalized_name": "imperial gold",
+      "aliases": [
+        "Imperial Gold Shade",
+        "77.143"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "brown"
+      ],
+      "rgb": {
+        "r": 96,
+        "g": 60,
+        "b": 30
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/obsidian-black-airbrush",
+      "provider": "vallejo",
+      "name": "Obsidian Black (Airbrush)",
+      "normalized_name": "obsidian black",
+      "aliases": [
+        "Obsidian Black Airbrush",
+        "77.180"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "grey"
+      ],
+      "rgb": {
+        "r": 75,
+        "g": 78,
+        "b": 77
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/obsidian-black-base",
+      "provider": "vallejo",
+      "name": "Obsidian Black (Base)",
+      "normalized_name": "obsidian black",
+      "aliases": [
+        "Obsidian Black Base",
+        "77.140"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "grey"
+      ],
+      "rgb": {
+        "r": 75,
+        "g": 78,
+        "b": 77
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/obsidian-black-light",
+      "provider": "vallejo",
+      "name": "Obsidian Black (Light)",
+      "normalized_name": "obsidian black",
+      "aliases": [
+        "Obsidian Black Light",
+        "77.120"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "grey"
+      ],
+      "rgb": {
+        "r": 158,
+        "g": 156,
+        "b": 142
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/obsidian-black-shade",
+      "provider": "vallejo",
+      "name": "Obsidian Black (Shade)",
+      "normalized_name": "obsidian black",
+      "aliases": [
+        "Obsidian Black Shade",
+        "77.160"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "black"
+      ],
+      "rgb": {
+        "r": 28,
+        "g": 28,
+        "b": 26
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/radiant-yellow-airbrush",
+      "provider": "vallejo",
+      "name": "Radiant Yellow (Airbrush)",
+      "normalized_name": "radiant yellow",
+      "aliases": [
+        "Radiant Yellow Airbrush",
+        "77.162"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "yellow"
+      ],
+      "rgb": {
+        "r": 233,
+        "g": 187,
+        "b": 18
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/radiant-yellow-base",
+      "provider": "vallejo",
+      "name": "Radiant Yellow (Base)",
+      "normalized_name": "radiant yellow",
+      "aliases": [
+        "Radiant Yellow Base",
+        "77.122"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "yellow"
+      ],
+      "rgb": {
+        "r": 233,
+        "g": 187,
+        "b": 18
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/radiant-yellow-light",
+      "provider": "vallejo",
+      "name": "Radiant Yellow (Light)",
+      "normalized_name": "radiant yellow",
+      "aliases": [
+        "Radiant Yellow Light",
+        "77.102"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "yellow"
+      ],
+      "rgb": {
+        "r": 232,
+        "g": 210,
+        "b": 38
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/radiant-yellow-shade",
+      "provider": "vallejo",
+      "name": "Radiant Yellow (Shade)",
+      "normalized_name": "radiant yellow",
+      "aliases": [
+        "Radiant Yellow Shade",
+        "77.142"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "brown"
+      ],
+      "rgb": {
+        "r": 121,
+        "g": 91,
+        "b": 31
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/ruby-red-airbrush",
+      "provider": "vallejo",
+      "name": "Ruby Red (Airbrush)",
+      "normalized_name": "ruby red",
+      "aliases": [
+        "Ruby Red Airbrush",
+        "77.166"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "red"
+      ],
+      "rgb": {
+        "r": 192,
+        "g": 49,
+        "b": 65
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/ruby-red-base",
+      "provider": "vallejo",
+      "name": "Ruby Red (Base)",
+      "normalized_name": "ruby red",
+      "aliases": [
+        "Ruby Red Base",
+        "77.126"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "red"
+      ],
+      "rgb": {
+        "r": 192,
+        "g": 49,
+        "b": 65
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/ruby-red-light",
+      "provider": "vallejo",
+      "name": "Ruby Red (Light)",
+      "normalized_name": "ruby red",
+      "aliases": [
+        "Ruby Red Light",
+        "77.106"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "pink"
+      ],
+      "rgb": {
+        "r": 238,
+        "g": 155,
+        "b": 135
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/ruby-red-shade",
+      "provider": "vallejo",
+      "name": "Ruby Red (Shade)",
+      "normalized_name": "ruby red",
+      "aliases": [
+        "Ruby Red Shade",
+        "77.146"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "red"
+      ],
+      "rgb": {
+        "r": 122,
+        "g": 30,
+        "b": 50
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/rusty-metal-airbrush",
+      "provider": "vallejo",
+      "name": "Rusty Metal (Airbrush)",
+      "normalized_name": "rusty metal",
+      "aliases": [
+        "Rusty Metal Airbrush",
+        "77.178"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "orange"
+      ],
+      "rgb": {
+        "r": 134,
+        "g": 97,
+        "b": 70
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/rusty-metal-base",
+      "provider": "vallejo",
+      "name": "Rusty Metal (Base)",
+      "normalized_name": "rusty metal",
+      "aliases": [
+        "Rusty Metal Base",
+        "77.138"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "orange"
+      ],
+      "rgb": {
+        "r": 134,
+        "g": 97,
+        "b": 70
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/rusty-metal-light",
+      "provider": "vallejo",
+      "name": "Rusty Metal (Light)",
+      "normalized_name": "rusty metal",
+      "aliases": [
+        "Rusty Metal Light",
+        "77.118"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "orange"
+      ],
+      "rgb": {
+        "r": 195,
+        "g": 157,
+        "b": 134
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/rusty-metal-shade",
+      "provider": "vallejo",
+      "name": "Rusty Metal (Shade)",
+      "normalized_name": "rusty metal",
+      "aliases": [
+        "Rusty Metal Shade",
+        "77.158"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "brown"
+      ],
+      "rgb": {
+        "r": 69,
+        "g": 54,
+        "b": 47
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/sapphire-blue-airbrush",
+      "provider": "vallejo",
+      "name": "Sapphire Blue (Airbrush)",
+      "normalized_name": "sapphire blue",
+      "aliases": [
+        "Sapphire Blue Airbrush",
+        "77.171"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "blue"
+      ],
+      "rgb": {
+        "r": 0,
+        "g": 131,
+        "b": 175
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/sapphire-blue-base",
+      "provider": "vallejo",
+      "name": "Sapphire Blue (Base)",
+      "normalized_name": "sapphire blue",
+      "aliases": [
+        "Sapphire Blue Base",
+        "77.131"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "blue"
+      ],
+      "rgb": {
+        "r": 0,
+        "g": 131,
+        "b": 175
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/sapphire-blue-light",
+      "provider": "vallejo",
+      "name": "Sapphire Blue (Light)",
+      "normalized_name": "sapphire blue",
+      "aliases": [
+        "Sapphire Blue Light",
+        "77.111"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "blue"
+      ],
+      "rgb": {
+        "r": 80,
+        "g": 174,
+        "b": 226
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/sapphire-blue-shade",
+      "provider": "vallejo",
+      "name": "Sapphire Blue (Shade)",
+      "normalized_name": "sapphire blue",
+      "aliases": [
+        "Sapphire Blue Shade",
+        "77.151"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "blue"
+      ],
+      "rgb": {
+        "r": 0,
+        "g": 64,
+        "b": 111
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/sterling-silver-airbrush",
+      "provider": "vallejo",
+      "name": "Sterling Silver (Airbrush)",
+      "normalized_name": "sterling silver",
+      "aliases": [
+        "Sterling Silver Airbrush",
+        "77.161"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "grey"
+      ],
+      "rgb": {
+        "r": 186,
+        "g": 196,
+        "b": 200
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/sterling-silver-base",
+      "provider": "vallejo",
+      "name": "Sterling Silver (Base)",
+      "normalized_name": "sterling silver",
+      "aliases": [
+        "Sterling Silver Base",
+        "77.121"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "grey"
+      ],
+      "rgb": {
+        "r": 186,
+        "g": 196,
+        "b": 200
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/sterling-silver-light",
+      "provider": "vallejo",
+      "name": "Sterling Silver (Light)",
+      "normalized_name": "sterling silver",
+      "aliases": [
+        "Sterling Silver Light",
+        "77.101"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "white"
+      ],
+      "rgb": {
+        "r": 245,
+        "g": 245,
+        "b": 244
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/sterling-silver-shade",
+      "provider": "vallejo",
+      "name": "Sterling Silver (Shade)",
+      "normalized_name": "sterling silver",
+      "aliases": [
+        "Sterling Silver Shade",
+        "77.141"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "grey"
+      ],
+      "rgb": {
+        "r": 57,
+        "g": 56,
+        "b": 54
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/ultramarine-blue-airbrush",
+      "provider": "vallejo",
+      "name": "Ultramarine Blue (Airbrush)",
+      "normalized_name": "ultramarine blue",
+      "aliases": [
+        "Ultramarine Blue Airbrush",
+        "77.170"
+      ],
+      "usage_roles": [
+        "metallic",
+        "air"
+      ],
+      "color_families": [
+        "metallic",
+        "blue"
+      ],
+      "rgb": {
+        "r": 51,
+        "g": 83,
+        "b": 122
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/ultramarine-blue-base",
+      "provider": "vallejo",
+      "name": "Ultramarine Blue (Base)",
+      "normalized_name": "ultramarine blue",
+      "aliases": [
+        "Ultramarine Blue Base",
+        "77.130"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "blue"
+      ],
+      "rgb": {
+        "r": 51,
+        "g": 83,
+        "b": 122
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/ultramarine-blue-light",
+      "provider": "vallejo",
+      "name": "Ultramarine Blue (Light)",
+      "normalized_name": "ultramarine blue",
+      "aliases": [
+        "Ultramarine Blue Light",
+        "77.110"
+      ],
+      "usage_roles": [
+        "metallic"
+      ],
+      "color_families": [
+        "metallic",
+        "blue"
+      ],
+      "rgb": {
+        "r": 126,
+        "g": 176,
+        "b": 203
+      },
+      "owned": false
+    },
+    {
+      "id": "vallejo/ultramarine-blue-shade",
+      "provider": "vallejo",
+      "name": "Ultramarine Blue (Shade)",
+      "normalized_name": "ultramarine blue",
+      "aliases": [
+        "Ultramarine Blue Shade",
+        "77.150"
+      ],
+      "usage_roles": [
+        "metallic",
+        "shade"
+      ],
+      "color_families": [
+        "metallic",
+        "blue"
+      ],
+      "rgb": {
+        "r": 16,
+        "g": 32,
+        "b": 84
       },
       "owned": false
     }
