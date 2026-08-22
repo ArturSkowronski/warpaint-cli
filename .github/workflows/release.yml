@@ -1,0 +1,180 @@
+name: Release
+
+# Tag a release and this ships it: npm publish + Fly.io deploy.
+#
+#   git tag -a v1.2.3 -m "v1.2.3 — …" && git push origin v1.2.3
+#
+# Or run it by hand from the Actions tab (workflow_dispatch) to redeploy Fly
+# without cutting a version, or to retry a publish that failed.
+#
+# Required repository secrets:
+#   FLY_API_TOKEN  — `fly tokens create deploy -a warpaint-mcp` (deploy-scoped, not a personal token)
+#   NPM_TOKEN      — OPTIONAL. Only needed if npm Trusted Publishing is not configured for the
+#                    package. Prefer trusted publishing: npmjs.com → minipainter → Settings →
+#                    Trusted Publisher → GitHub Actions, repo ArturSkowronski/minipainter,
+#                    workflow `release.yml`. That has no token to expire.
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      publish_npm:
+        description: 'Publish the package to npm'
+        type: boolean
+        default: true
+      deploy_fly:
+        description: 'Deploy the MCP server to Fly.io'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Verify
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.pkg.outputs.version }}
+      on_npm: ${{ steps.published.outputs.on_npm }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: npm
+
+      - run: npm ci
+
+      - id: pkg
+        run: echo "version=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
+
+      # A tag that disagrees with package.json publishes the wrong thing under the right name.
+      - name: Tag matches package.json
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          pkg="${{ steps.pkg.outputs.version }}"
+          if [ "$tag" != "$pkg" ]; then
+            echo "::error::tag $GITHUB_REF_NAME does not match package.json version $pkg"
+            exit 1
+          fi
+          echo "tag $GITHUB_REF_NAME matches package.json $pkg"
+
+      - run: npm test
+
+      # Fails if any paint has an unresolved product_format after a catalog change.
+      - name: Catalog lint
+        run: node src/cli.mjs catalog lint
+
+      # npm test runs against the working tree; this runs the packed tarball the way a
+      # stranger would install it. See CLAUDE.md — two shipped bugs lived in that gap.
+      - name: Clean-room install test
+        run: scripts/clean-room-test.sh
+
+      # Republishing an existing version is a hard error on npm, which would fail the whole
+      # run and block the Fly deploy on a re-run. Detect it and skip the publish instead.
+      - id: published
+        name: Check whether the version is already on npm
+        run: |
+          pkg="${{ steps.pkg.outputs.version }}"
+          if npm view "minipainter@$pkg" version >/dev/null 2>&1; then
+            echo "minipainter@$pkg is already on npm — publish will be skipped"
+            echo "on_npm=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "on_npm=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  publish-npm:
+    name: Publish to npm
+    needs: verify
+    if: >-
+      (github.event_name != 'workflow_dispatch' || inputs.publish_npm) &&
+      needs.verify.outputs.on_npm == 'false'
+    runs-on: ubuntu-latest
+    environment: npm
+    permissions:
+      contents: read
+      id-token: write        # OIDC: npm trusted publishing + provenance attestation
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          registry-url: 'https://registry.npmjs.org'
+          cache: npm
+
+      # Trusted publishing needs a newer npm than the one bundled with the Node image.
+      - run: npm install -g npm@latest
+
+      - run: npm ci
+
+      # Only used when trusted publishing is not configured; with OIDC this is a no-op.
+      - name: Configure token auth (fallback)
+        if: env.NPM_TOKEN != ''
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+          echo "using NPM_TOKEN — consider switching to trusted publishing, tokens expire"
+
+      - name: Publish
+        run: npm publish --provenance --access public
+
+      - name: Confirm it is live
+        run: |
+          pkg="${{ needs.verify.outputs.version }}"
+          for i in $(seq 1 10); do
+            if [ "$(npm view "minipainter@$pkg" version 2>/dev/null)" = "$pkg" ]; then
+              echo "minipainter@$pkg is live on npm"; exit 0
+            fi
+            echo "not visible yet, retry $i/10"; sleep 6
+          done
+          echo "::error::minipainter@$pkg did not become visible on npm"; exit 1
+
+  deploy-fly:
+    name: Deploy to Fly.io
+    needs: verify
+    if: github.event_name != 'workflow_dispatch' || inputs.deploy_fly
+    runs-on: ubuntu-latest
+    environment: fly
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Require FLY_API_TOKEN
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+        run: |
+          if [ -z "$FLY_API_TOKEN" ]; then
+            echo "::error::FLY_API_TOKEN is not set. Create one with: fly tokens create deploy -a warpaint-mcp"
+            exit 1
+          fi
+
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+
+      - name: Deploy
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+        run: flyctl deploy --remote-only
+
+      # The catalog reaches Fly only through a deploy, so prove the new one is actually serving.
+      - name: Smoke-test the deployed server
+        run: |
+          base="https://warpaint-mcp.fly.dev"
+          for i in $(seq 1 10); do
+            if [ "$(curl -sf "$base/health" | head -c 200)" != "" ]; then break; fi
+            echo "health not up yet, retry $i/10"; sleep 6
+          done
+          curl -sf "$base/health" | grep -q '"status":"ok"' || { echo "::error::/health did not report ok"; exit 1; }
+          count=$(curl -sf "$base/api/paints" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).items.length))')
+          local_count=$(node -e 'const fs=require("fs");let t=0;for(const f of fs.readdirSync("data/catalog")){const c=JSON.parse(fs.readFileSync("data/catalog/"+f));t+=(Array.isArray(c)?c:c.paints).length}console.log(t)')
+          echo "deployed catalog: $count paints (repo has $local_count)"
+          if [ "$count" != "$local_count" ]; then
+            echo "::error::deployed catalog has $count paints, repo has $local_count — deploy did not take"
+            exit 1
+          fi

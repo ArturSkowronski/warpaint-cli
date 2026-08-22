@@ -42,6 +42,50 @@ fly deploy
 fly secrets list   # token is hashed; if you forgot it, rotate with `fly secrets set`
 ```
 
+## Deploying from GitHub Actions (preferred)
+
+Manual `fly deploy` works, but the release path is automated in
+[`.github/workflows/release.yml`](../.github/workflows/release.yml). Pushing a `v*` tag runs the
+test suite, `catalog lint` and the clean-room install test, then publishes to npm and deploys
+here — and finally checks that the deployed server really serves the new catalog.
+
+### One-time setup
+
+Create a **deploy-scoped** token (not your personal login token, which is long-lived and can do
+everything to every app):
+
+```sh
+fly tokens create deploy -a warpaint-mcp
+```
+
+Put the value in the repo as a secret named `FLY_API_TOKEN`
+(Settings → Secrets and variables → Actions → New repository secret).
+
+For npm, prefer **Trusted Publishing** over a token — npmjs.com → `minipainter` → Settings →
+Trusted Publisher → GitHub Actions, repo `ArturSkowronski/minipainter`, workflow `release.yml`.
+That authenticates over OIDC and has nothing to expire. If you would rather use a token, add it
+as the `NPM_TOKEN` secret instead; the workflow uses it when present. Note that an expired npm
+token makes `npm publish` fail with a **404 on `PUT`**, not a 401.
+
+### Cutting a release
+
+```sh
+npm version <major|minor|patch> --no-git-tag-version
+git commit -am "release: vX.Y.Z — …"
+git tag -a vX.Y.Z -m "vX.Y.Z — …"
+git push origin master && git push origin vX.Y.Z
+```
+
+The workflow refuses to run if the tag and `package.json` version disagree, and skips the npm
+publish (without failing) if that version is already on the registry — so a re-run after a
+half-finished release deploys Fly without tripping over the published package.
+
+### Redeploying without a release
+
+Actions → Release → Run workflow. Untick **Publish the package to npm** to deploy Fly only.
+This is the way to push a catalog change to the server between versions: the catalog reaches
+Fly *only* through a deploy, never through the `/inventory` sync.
+
 ## Smoke test
 
 ```sh

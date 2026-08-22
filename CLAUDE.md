@@ -84,8 +84,12 @@ on-disk file keeps the legacy id until something mutates it — that is delibera
 
 ## Distribution / npm packaging (bugs to not repeat)
 
-The package is meant to be installed from npm and run via `npx minipainter` / `npm i -g minipainter`
-(prepared as of v0.6.2; `npm publish` not yet run).
+The package is **published on npm** as [`minipainter`](https://www.npmjs.com/package/minipainter)
+(owner `artur-skowronski`, first published 2026-07-06 as v0.7.0) and is installed via
+`npx minipainter` / `npm i -g minipainter`. Publishing needs a live npmjs auth token in
+`~/.npmrc` (`//registry.npmjs.org/:_authToken=`); these expire, and an expired one makes
+`npm publish` fail with a **404 on `PUT`**, not a 401 — npm hides the existence of a package
+you are not authorized for. Check with `npm whoami` before blaming the tarball.
 `npm test` runs against the working tree and **cannot** catch install-only breakage — a global
 or `npx` install runs the code through a `node_modules/.bin` **symlink** and from a stranger's
 `$HOME` with no pre-existing data. Two bugs slipped through this gap (both fixed + regression-tested;
@@ -102,10 +106,21 @@ don't reintroduce the patterns):
    inventory (honoring `INVENTORY_JSON`); only the first write creates the file
    (`src/infrastructure/inventory/json-inventory-repository.mjs::load`).
 
+**Releasing:** tag `vX.Y.Z` and push it — `.github/workflows/release.yml` runs tests + `catalog lint`
++ the clean-room test, publishes to npm (trusted publishing via OIDC; `NPM_TOKEN` only as a fallback)
+and deploys Fly.io, then verifies the deployed catalog size matches the repo. Secrets: `FLY_API_TOKEN`
+(deploy-scoped). Fly-only redeploys go through `workflow_dispatch` with the npm box unticked — the
+catalog reaches Fly only via a deploy. See `docs/deploy-fly.md`.
+
 **Packaging rules:**
 - `package.json` must stay non-`private`, keep a `files` allowlist (**ship only `src/` + `data/`**;
   README/MCP.md/LICENSE/package.json are auto-included — never publish `docs/`, `tests/`, `scripts/`),
   and keep the `minipainter` bin alias so `npx minipainter` resolves a command (short `mpaint` stays).
 - **Before touching packaging or an entrypoint, run the clean-room test**, not just `npm test`:
-  `npm pack` → install the tarball into a throwaway dir with an isolated `HOME` → run the bin from
-  `node_modules/.bin`. If search/match/own/list don't work self-contained, it's broken for users.
+  `npm run test:clean-room` (`scripts/clean-room-test.sh`) — `npm pack` → install the tarball into a
+  throwaway dir with an isolated `HOME` → run the bin from `node_modules/.bin`. If search/match/list
+  don't work self-contained, it's broken for users. The release workflow runs it too, so a broken
+  install blocks the publish rather than reaching npm.
+  When adding checks to that script, do not `${var//…/}`-strip or `| grep -q` a captured CLI output:
+  `match color` prints ~66 KB, the substitution is quadratic in bash 3.2 (macOS default) and hangs
+  for minutes, and grep's early exit trips `set -o pipefail` via SIGPIPE. Use `case`/glob instead.
