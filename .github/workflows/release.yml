@@ -43,8 +43,8 @@ jobs:
       version: ${{ steps.pkg.outputs.version }}
       on_npm: ${{ steps.published.outputs.on_npm }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '22.x'
           cache: npm
@@ -104,8 +104,8 @@ jobs:
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '22.x'
           registry-url: 'https://registry.npmjs.org'
@@ -144,7 +144,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: fly
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Require FLY_API_TOKEN
         env:
